@@ -1,0 +1,73 @@
+Bài 3:
+
+1. Git
+    - Xem lịch sử commit: git log
+
+    - Thay đổi commit message:
+        - git commit --amend
+            - Gõ i -> vào chế độ insert
+            - Gõ esc để thoát insert
+            - Gõ “:wq” -> write and quit
+        - git commit --amend -m”message”
+
+    - Đưa file từ Staging về work directory: git restore --staged <file>
+
+    - Đưa file từ repository về working directory (uncommit): git reset HEAD~1 (undo 1 commit)
+
+    - Branch: Dùng branch để tạo ra một vùng làm việc mới, không ảnh hưởng tới vùng làm việc đã ổn định.
+        - Tạo branch:
+            - git branch <ten_branch>
+            - git checkout <ten_branch>
+            - git checkout -b <ten_branch>
+            - Tips: Luôn tạo branch mới trước khi thực hiện một lệnh copy từ internet
+        
+        - GitIgnore:
+            - Tạo file '.gitignore'
+            - Add file (<file_name>) and folder (<folder-name>/) vào file gitignore (file sẽ được đưa vào sẽ chuyển thành màu xám)
+
+2. Javascript
+    - Conventions
+        - kebab-case: tên file
+        - camelCase: tên biến
+        - PascalCase: tên class
+
+    - Formatted console.log
+        - console.log(‘Toi la Nga’);
+        - console.log(“Toi la Phong”);
+        - console.log(`${variable_name}`);
+        - let name = “Nga”;
+            console.log(`Toi la ${name}`);
+            console.log(“Toi ten la” + name + “”);
+
+    - Object
+        - Khai báo Object
+            - let/const <ten_object> = {<thuoc_tinh>: <gia_tri>,...}
+            - <thuoc_tinh>: giống quy tắc đặt tên biến
+            - <gia tri>: có kiểu giống biến, hoặc là 1 object khác.
+        - Sử dụng Object
+            - console.log("name = " + user.name);
+            - console.log("manufacturer name = " + product.manufacturer.name);
+            - console.log(“price = “, product[“price”]);
+        - Thuộc tính của Object có thể gán lại giá trị:
+            Ex: - user.age = 28
+                - product[“manufacturer”][“year”] = 2025
+            
+    - Logical operator
+        - && : cả 2 vế của mệnh đề đều đúng
+        - || : một trong 2 vế đúng
+        - ! : đảo ngược lại giá trị của mệnh đề
+
+    - Array
+        - Khai báo: const arr = [1, 2, 3, 4, 5];
+        - Sử dụng: 
+            - Độ dài mảng: length
+            - Lấy phần tử theo index: [0], [1], [2]
+    
+    - Function
+        - Khai báo: function <nameFunction>() {// code}
+        - Parameter: function <nameFunction>(n) {// code}
+        - Return value: 
+            Ex: function <nameFunction>(a, b) {
+                if(a > b){
+                    return a;}
+                }
