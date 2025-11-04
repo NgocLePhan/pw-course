@@ -19,7 +19,7 @@ const person = {
     }
 };
 
-console.log("Đường: " + person.address.street);
+console.log(`Đường: ${person.address.street}`);
 
 //3. Tạo một object student và truy cập đến điểm môn toán (math) sử dụng ngoặc vuông.
 //Biết object student bao gồm 2 thuộc tính: name và grades. 
@@ -32,7 +32,7 @@ const student = {
     }
 };
 
-console.log("Math: " + student["grades"]["math"]);
+console.log(`Học sinh: ${student["name"]}. Toán: ${student["grades"]["math"]}`);
 
 //4. Tạo một object product với các thuộc tính là tên các sản phẩm và giá trị là giá của chúng. 
 // Dùng vòng lặp for...in để in ra tên và giá của mỗi sản phẩm.
@@ -45,27 +45,27 @@ const settings = {
     brightness: 50
 };
 
-settings.volume = 100;
-console.log(settings);
+settings.volume = 100; // thay đổi giá trị volume
+console.log("Giá trị volume mới: " + settings.volume);
 
 //6. Tạo một object bike và sau đó thêm thuộc tính color vào object đó
 const bike = {
     branch: "Honda",
-    model: "wave alpha",
-    price: 18000000
-};
+    model: "Camry",
+    year: 2023
+}
 
-bike.color = "Red";
-console.log(bike);
+bike.color = "Đỏ xen kẽ đen"; // thêm thuộc tính color
+console.log(`Xe ${bike.model} màu ${bike.color} thuộc hãng ${bike.branch} sản xuất ${bike.year}`);
 
 //7. Tạo một object employee với các thuộc tính: name, age và xóa thuộc tính age khỏi object này
 const employee = {
     name: "Nguyễn Văn A",
     age: 20
 };
-console.log(employee);
 
-delete employee.age;
+delete employee.age; // xóa thuộc tính age
+console.log("Thông tin nhân viên: ");
 console.log(employee);
 
 //8. Một trường học có các lớp học và học sinh như sau:
