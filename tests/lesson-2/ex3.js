@@ -1,5 +1,5 @@
 // khai báo biến
-let number = -6;
+const number = -6; // sửa bài: ex3.js: đề bài nêu khai báo 1 hằng số thì mình sẽ khai báo const nha
 
 //kiểm tra hằng số lớn hơn 0
 if (number > 0) {

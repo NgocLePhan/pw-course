@@ -108,3 +108,27 @@
 - Mac: Option + Shift + F
 - Window: Alt + Shift + F
 
+**Markdown**
+    1. Tiêu đề: Dùng `#` để tạo tiêu đề. Nhiều `#` hơn tạo tiêu đề nhỏ hơn.
+        Exp: 
+            # Tiêu đề 1
+            ## Tiêu đề 2
+            ### Tiêu đề 3
+
+    2. In đậm và in nghiêng: Dùng `**` hoặc `__` cho chữ in đậm, và `*` hoặc `_` cho chữ in nghiêng.
+        Exp:
+            **Chữ in đậm**
+            *Chữ in nghiêng*
+
+    3. Danh sách: Danh sách có thứ tự dùng số, danh sách không thứ tự dùng dấu `-` hoặc `*`.
+        Exp: 
+            1. Mục thứ nhất
+            2. Mục thứ hai
+            - Mục không thứ tự
+            * Mục không thứ tự
+
+    
+    4. Đường dẫn và hình ảnh: 
+        - Dùng []() để chèn liên kết và ![]() để chèn hình ảnh.
+        - [Liên kết](https://example.com)
+        - ![Hình ảnh](https://example.com/image.jpg)

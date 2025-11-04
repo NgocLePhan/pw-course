@@ -25,6 +25,11 @@ Bài 3:
             - Tạo file '.gitignore'
             - Add file (<file_name>) and folder (<folder-name>/) vào file gitignore (file sẽ được đưa vào sẽ chuyển thành màu xám)
 
+        - Log:
+            - git log
+            - git checkout <revision>
+                Exp: git checkout 070745d6c000d2a90740dcf97ee5db3f9418cc1f
+
 2. Javascript
     - Conventions
         - kebab-case: tên file
