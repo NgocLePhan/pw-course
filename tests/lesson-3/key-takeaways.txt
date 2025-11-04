@@ -53,9 +53,37 @@ Bài 3:
             - console.log("name = " + user.name);
             - console.log("manufacturer name = " + product.manufacturer.name);
             - console.log(“price = “, product[“price”]);
+
         - Thuộc tính của Object có thể gán lại giá trị:
             Ex: - user.age = 28
                 - product[“manufacturer”][“year”] = 2025
+
+        - Thêm thuộc tính vào Object: Để thêm thuộc tính mới vào object, chúng ta chỉ cần dùng dấu . hoặc ngoặc vuông [] để định
+nghĩa thuộc tính mới.
+            Ex: let bike = {
+                    make: 'Yamaha',
+                    model: 'YZF-R3'
+                    };
+                bike.color = “Blue”;
+                bike[“price new”] = 100;
+                console.log(bike);
+                {make: 'Yamaha', model: 'YZF-R3', color: 'Blue', ‘price new’ : 100}
+
+        - Xóa thuộc tính của Object: Để xóa thuộc tính của object, chúng ta dùng hàm delete:
+            Ex: let employee = {
+                    name: 'Le Van C',
+                    age: 30,
+                    department: 'HR'
+                };
+                delete employee.age;
+                console.log(employee);
+                Kết quả:
+                    {name: 'Le Van C', department: 'HR'}
+
+        Note: 
+            - Khi dùng const (hằng số), thì giá trị sẽ không thay đổi được.
+            - Đối với object cũng vậy, nếu bạn thay cả object bằng một object mới, bạn cũng sẽ gặp lỗi.
+            - Tuy nhiên, nếu bạn chỉ thay đổi các thuộc tính của object thì hoàn toàn hợp lệ.
             
     - Logical operator
         - && : cả 2 vế của mệnh đề đều đúng
