@@ -17,14 +17,14 @@ phiêu lưu <mission>!".*/
 function launchShip(crew) {
     let crewMember = "";
 
-    for(let i= 0; i < crew.length; i++){
-        if(i === crew.length - 1){
+    for (let i = 0; i < crew.length; i++) {
+        if (i === crew.length - 1) {
             crewMember += crew[i] + " ";
-        } else{
+        } else {
             crewMember += crew[i] + ", ";
         }
     }
-    
+
     return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${crewMember}sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`;
 }
 
