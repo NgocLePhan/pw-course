@@ -15,8 +15,17 @@ một thông điệp "Chuẩn bị khởi động! Phi hành đoàn gồm: <danh
 tên thành viên phi hành đoàn> sẽ đồng hành cùng bạn trong chuyến
 phiêu lưu <mission>!".*/
 function launchShip(crew) {
-    const crewMember = crew.join(",");
-    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${crewMember} sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`;
+    let crewMember = "";
+
+    for(let i= 0; i < crew.length; i++){
+        if(i === crew.length - 1){
+            crewMember += crew[i] + " ";
+        } else{
+            crewMember += crew[i] + ", ";
+        }
+    }
+    
+    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${crewMember}sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`;
 }
 
 /*- Kết nối với Trung tâm Điều khiển: Gọi hàm launchShip và in thông điệp chào mừng ra console.*/
